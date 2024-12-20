@@ -1,0 +1,29 @@
+@model Categorias
+
+<h2>Eliminar Categorias</h2>
+<form asp-action="Delete" asp-action-id="@Model.Id">
+    <div class="form-group">
+        <label for="Nombre">
+            Nombre:
+            <input asp-for="Nombre" class="from-control" disabled />
+        </label>
+        <label for="Precio">
+            Precio:
+            <input asp-for="Precio" class="from-control" disabled />
+        </label>
+        <label for="Cantidad">
+            Cantidad:
+            <input asp-for="Cantidad" class="from-control" disabled />
+        </label>
+        <label for="Fecha_Resgistro">
+            <input asp-for="Fecha_Registro" class="from-control" type="date" disabled />
+        </label>
+        <label for="Estado">
+            Estado:
+            <input asp-for="Estado" class="from-control" disabled />
+        </label>
+
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <button asp-action="Index" class="btn btn-dark">Cancelar</button>
+    </div>
+</form>

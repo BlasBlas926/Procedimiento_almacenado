@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Create";
+}
+@model Categorias
+<h2>Crear nueva Categoria</h2>
+<form asp-action="Create">
+    <div class="form-group">
+        <label for="Nombre">
+            Nombre:
+            <input asp-for="Nombre" class="from-control" />
+        </label>
+        Precio:
+        <input asp-for="Precio" class="from-control" />
+        </label for="Precio">
+
+        <label>
+            Cantidad:
+            <input asp-for="Cantidad" class="from-control" />
+        </label>
+
+        <label for="Fecha_Registro">
+            Fecha registro:
+            <input asp-for="Fecha_Registro" class="from-control" type="date"/>|
+        </label>
+        <label for="Estado">
+            Estado:
+            <input asp-for="Estado" class="from-control" />
+        </label>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a asp-action="Index">Regresar</a>
+</form>
